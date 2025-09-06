@@ -18,10 +18,9 @@
     "tailwindcss": "^3.4.13"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "dev": "react-scripts start",
-    "vercel-build": "react-scripts build"
+   "dev": "next dev",
+  "build": "next build",
+  "start": "next start"
   },
   "eslintConfig": {
     "extends": [
@@ -43,8 +42,4 @@
   },
   "proxy": "http://localhost:5000"
 }
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-}
+
