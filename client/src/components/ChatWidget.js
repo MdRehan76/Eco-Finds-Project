@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   MessageCircle, 
@@ -69,6 +69,11 @@ const ChatWidget = () => {
       minute: '2-digit' 
     });
   };
+
+  // 🔒 Restrict chat to authenticated users only
+  if (!isAuthenticated) {
+    return null; 
+  }
 
   return (
     <>
