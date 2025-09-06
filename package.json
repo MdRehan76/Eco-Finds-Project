@@ -2,7 +2,6 @@
   "name": "ecofinds",
   "version": "1.0.0",
   "description": "A full-stack responsive web app for eco-friendly product trading",
-  "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:api\"",
     "dev:client": "cd client && npm run dev",
@@ -11,9 +10,7 @@
     "start": "cd api && npm start",
     "install:all": "npm install && cd client && npm install && cd ../api && npm install"
   },
-  "keywords": ["ecofinds", "eco-friendly", "marketplace", "recycling"],
-  "author": "EcoFinds Team",
-  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "concurrently": "^8.2.2"
   }
